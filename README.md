@@ -1,6 +1,9 @@
 # aws-lambda-layers
 Repo of prepackaged .zip archives that contain Python libraries to be used with AWS Lambda.
 
+## Available layers
+* **praw-importer.zip** - Python Reddit API wrapper (https://praw.readthedocs.io/en/latest/)
+
 ## How to create layers
 First make sure Python version is same as deployed in AWS Lambda instance. Install virtualenv if haven't already.
 ```
@@ -18,5 +21,5 @@ deactivate
 Create archive of dependencies.
 ```
 cd venv/lib/PYTHON_VERSION/site-packages
-zip -r importer.zip PACKAGE1 PACKAGE2
+zip -r praw-importer.zip PACKAGE1 PACKAGE2
 ```
