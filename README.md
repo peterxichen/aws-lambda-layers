@@ -18,8 +18,9 @@ source venv/bin/activate
 pip3 install PACKAGE1 PACKAGE2
 deactivate
 ```
-Create archive of dependencies.
+Dependency files should now be availible in the following location.
 ```
-cd venv/lib/PYTHON_VERSION/site-packages
-zip -r praw-importer.zip PACKAGE1 PACKAGE2
+cd venv/lib/{PYTHON_VERSION}/site-packages
 ```
+Create `.zip` archive. Make sure the folder structure inside the zip file is as follows:
+> python/lib/{PYTHON_VERSION}/site-packages/{LibrariesGoHere}
