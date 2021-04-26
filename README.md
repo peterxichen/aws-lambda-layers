@@ -3,6 +3,7 @@ Repo of prepackaged .zip archives that contain Python libraries to be used with 
 
 ## Available layers
 * **praw-importer.zip** - Python Reddit API wrapper (https://praw.readthedocs.io/en/latest/)
+* **requests-importer.zip** - requests http library (https://pypi.org/project/requests/)
 
 ## How to create layers
 First make sure Python version is same as deployed in AWS Lambda instance. Install virtualenv if haven't already.
